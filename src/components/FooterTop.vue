@@ -62,7 +62,7 @@ export default {
                 </div>
                 <!-- /.col-6 -->
                 <div class="col-5 position-relative d-flex justify-content-center align-items-center">
-                    <img class="dc_logo img-fluid" src="..\assets\img\dc-logo-bg.png" alt="">
+                    <img class="img-fluid position-absolute" src="..\assets\img\dc-logo-bg.png" alt="">
                 </div>
                 <!-- /.col-6 -->
             </div>
@@ -79,13 +79,7 @@ export default {
     background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.dc_logo {
-    position: absolute;
-    /* top: 0; */
-    /* right: 50; */
-    /* z-index: 0; */
-    /* margin-top: -1rem; */
+    position: relative;
+    z-index: 0;
 }
 </style>

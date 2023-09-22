@@ -45,8 +45,6 @@ export default {
 
     a.nav-item {
         text-transform: uppercase;
-        font-family: 'Encode Sans', sans-serif;
-        font-size: 800;
         padding: 3rem .5rem;
         font-size: .8rem;
         color: $dc_dark_soft;

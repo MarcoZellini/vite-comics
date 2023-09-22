@@ -1,11 +1,13 @@
 <script>
 import FooterTop from './FooterTop.vue'
+import FooterBottom from './FooterBottom.vue'
 
 export default {
     name: 'AppFooter',
 
     components: {
-        FooterTop
+        FooterTop,
+        FooterBottom
     }
 }
 </script>
@@ -14,11 +16,9 @@ export default {
     <footer id="app_footer">
 
         <FooterTop />
-        <section id="others">
-            <!-- Bottone signup -->
 
-            <!-- Lista di social -->
-        </section>
+        <FooterBottom />
+
     </footer>
     <!-- /#app_footer -->
 </template>

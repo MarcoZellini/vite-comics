@@ -75,7 +75,7 @@ export default {
 
 #app_main {
     position: relative;
-    // // z-index: 10;
+    z-index: 10;
 
     #content {
         background-color: $dc_dark;

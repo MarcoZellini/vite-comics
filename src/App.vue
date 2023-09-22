@@ -1,16 +1,23 @@
 <script>
+import AppHeader from './components/AppHeader.vue'
 
 export default {
-  name: 'App'
-
+  name: 'App',
+  components: {
+    AppHeader
+  }
 
 }
 </script>
 
 <template>
-  <h1>Titolo</h1>
+  <AppHeader />
+
+  <main id="app_main"></main>
+  <!-- /#app_main -->
+
+  <footer id="app_footer"></footer>
+  <!-- /#app_footer -->
 </template>
 
-<style lang="scss" scoped>
-@use '../src/assets/scss/partials/variables' as *;
-</style>
+<style lang="scss" scoped></style>

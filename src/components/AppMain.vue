@@ -9,7 +9,7 @@ export default {
 
         <section id="content">
             <div class="container">
-                <h2 class="py-5">--&gt; Content goes here &lt;--</h2>
+                <h6 class="py-5">--&gt; Content goes here &lt;--</h6>
             </div>
             <!-- /.container -->
         </section>
@@ -81,7 +81,7 @@ export default {
         background-color: $dc_dark;
         color: $dc_light;
 
-        h2 {
+        h6 {
             margin: 0;
         }
     }

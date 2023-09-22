@@ -1,6 +1,11 @@
 <script>
+import AppButton from './AppButton.vue'
+
 export default {
-    name: "FooterBottom"
+    name: "FooterBottom",
+    components: {
+        AppButton
+    }
 }
 </script>
 
@@ -8,8 +13,7 @@ export default {
     <section id="others" class="py-5">
         <div class="container d-flex justify-content-between align-items-center">
             <!-- Bottone signup -->
-            <a class="btn btn-outline-primary rounded-0 text-uppercase d-flex align-items-center text-light py-2">sign-up
-                now!</a>
+            <AppButton />
 
             <!-- Lista di social -->
             <ul class="social d-flex align-items-center m-0">

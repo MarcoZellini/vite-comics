@@ -1,6 +1,53 @@
 <script>
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data() {
+        return {
+            activeLink: 1,
+            linkList: [
+                {
+                    url: '#',
+                    name: 'Characters'
+                },
+                {
+                    url: '#',
+                    name: 'Comics'
+                },
+                {
+                    url: '#',
+                    name: 'Movies'
+                },
+                {
+                    url: '#',
+                    name: 'TV'
+                },
+                {
+                    url: '#',
+                    name: 'Games'
+                },
+                {
+                    url: '#',
+                    name: 'Collectibles'
+                },
+                {
+                    url: '#',
+                    name: 'Videos'
+                },
+                {
+                    url: '#',
+                    name: 'Fans'
+                },
+                {
+                    url: '#',
+                    name: 'News'
+                },
+                {
+                    url: '#',
+                    name: 'Shop'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -13,16 +60,8 @@ export default {
                 </a>
 
                 <div class="nav navbar-nav gx-3">
-                    <a class="nav-item nav-link" href="#">Characters</a>
-                    <a class="nav-item nav-link active" href="#">Comics</a>
-                    <a class="nav-item nav-link" href="#">Movies</a>
-                    <a class="nav-item nav-link" href="#">Tv</a>
-                    <a class="nav-item nav-link" href="#">Games</a>
-                    <a class="nav-item nav-link" href="#">Collectibles</a>
-                    <a class="nav-item nav-link" href="#">Videos</a>
-                    <a class="nav-item nav-link" href="#">Fans</a>
-                    <a class="nav-item nav-link" href="#">News</a>
-                    <a class="nav-item nav-link" href="#">Shop</a>
+                    <a v-for="(item, i) in linkList" :class="activeLink === i ? 'active' : ''" class="nav-item nav-link"
+                        :href="item.url">{{ item.name }}</a>
                 </div>
             </nav>
         </div>

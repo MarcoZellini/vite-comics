@@ -47,6 +47,11 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+        toActiveLink(i) {
+            this.activeLink = i;
+        }
     }
 }
 </script>
@@ -61,7 +66,7 @@ export default {
 
                 <div class="nav navbar-nav gx-3">
                     <a v-for="(item, i) in linkList" :class="activeLink === i ? 'active' : ''" class="nav-item nav-link"
-                        :href="item.url">{{ item.name }}</a>
+                        :href="item.url" @click="toActiveLink(i)">{{ item.name }}</a>
                 </div>
             </nav>
         </div>

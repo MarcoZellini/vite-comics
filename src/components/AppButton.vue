@@ -5,7 +5,15 @@ export default {
 </script>
 
 <template>
-    <a class="btn btn-outline-primary rounded-0 text-uppercase d-flex align-items-center text-light py-2">sign-up now!</a>
+    <a class="btn text-uppercase d-flex align-items-center py-2">sign-up now!</a>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../../src/assets/scss/partials/variables' as *;
+
+a {
+    border: 2px solid $dc_primary;
+    border-radius: 0;
+    color: $dc_light;
+}
+</style>

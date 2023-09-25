@@ -1,24 +1,25 @@
 <script>
+import AppHero from './AppHero.vue'
 import MainMenu from './MainMenu.vue'
 
 export default {
     name: 'AppMain',
     components: {
-        MainMenu
-    }
+        MainMenu,
+        AppHero
+    },
+    methods: {
+        getImageUrl(name) {
+            return new URL(`../assets/img/${name}`, import.meta.url).href
+        }
+    },
+
 }
 </script>
 
 <template>
     <main id="app_main">
-
-        <section id="content">
-            <div class="container">
-                <h6 class="py-5">--&gt; Content goes here &lt;--</h6>
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /#content -->
+        <AppHero :imgPath="getImageUrl('jumbotron.jpg')" />
 
         <MainMenu />
 

@@ -25,6 +25,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../src/assets/scss/partials/variables' as *;
-
-#app_footer {}
 </style>

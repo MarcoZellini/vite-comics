@@ -42,7 +42,7 @@ export default {
 @use '../../src/assets/scss/partials/variables' as *;
 
 #others {
-    background-color: $dc_dark;
+    background-color: $dc_dark_soft;
     position: relative;
     z-index: 10;
     color: $dc_light;
